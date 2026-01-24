@@ -1,1 +1,1 @@
-# Fintech---Intelligent-Document-Processing-NLP-
+# Fintech-Intelligent-Document-Processing-NLP-
