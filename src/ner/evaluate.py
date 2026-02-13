@@ -2,8 +2,8 @@ import spacy
 from spacy.tokens import DocBin
 from sklearn.metrics import precision_recall_fscore_support
 
-MODEL_PATH = "artifacts/ner_model"
-DATA_PATH = "data/ner/train.spacy"
+MODEL_PATH = "/home/abhi/Projects/Fintech-Intelligent-Document-Processing-NLP/artifacts/ner_web_gpu"
+DATA_PATH = "/home/abhi/Projects/Fintech-Intelligent-Document-Processing-NLP/data/ner/val_split.spacy"
 
 def extract_entities(doc):
     return set((ent.start_char, ent.end_char, ent.label_) for ent in doc.ents)
