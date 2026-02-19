@@ -1,100 +1,148 @@
-📄 LexiScan Auto – Legal Contract Entity Extraction System
-Overview
+<div align="center">
 
-LexiScan Auto is a production-oriented Intelligent Document Processing (IDP) system designed to extract structured legal entities from contract documents.
+# 🚀 LexiScan Auto  
+### Legal Contract Entity Extraction System
 
-The system processes both:
+Production-Grade Intelligent Document Processing (OCR + NER + API + Docker)
 
-📄 Native digital PDFs
+<br>
 
-🖨 Scanned image-based PDFs (via OCR)
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![FastAPI](https://img.shields.io/badge/FastAPI-API-green?logo=fastapi)
+![spaCy](https://img.shields.io/badge/spaCy-NER-orange)
+![Docker](https://img.shields.io/badge/Docker-Containerized-blue?logo=docker)
+![OCR](https://img.shields.io/badge/OCR-Tesseract-lightgrey)
 
-It automatically extracts key entities such as:
+</div>
 
-Contract Dates
+---
 
-Party Names
+## 📌 Overview
 
-Payment / Financial Terms
+**LexiScan Auto** is a production-ready Intelligent Document Processing (IDP) system designed to extract structured entities from legal contracts.
 
-Termination Clauses
+It supports:
 
-Legal & Restriction Clauses
+- 📄 Native digital PDFs  
+- 🖨 Scanned image-based PDFs (via OCR)
 
-The project follows a production-grade MLOps mindset, focusing on reproducibility, modularity, and deployment readiness.
+The system automatically extracts:
 
-🏗 Architecture
+- Contract Dates  
+- Party Names  
+- Payment / Liability Terms  
+- Termination Clauses  
+- Legal & Restriction Clauses  
+
+---
+
+## 🏗 System Architecture
+
+<div align="center">
+
+# 🚀 LexiScan Auto  
+### Legal Contract Entity Extraction System
+
+Production-Grade Intelligent Document Processing (OCR + NER + API + Docker)
+
+<br>
+
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![FastAPI](https://img.shields.io/badge/FastAPI-API-green?logo=fastapi)
+![spaCy](https://img.shields.io/badge/spaCy-NER-orange)
+![Docker](https://img.shields.io/badge/Docker-Containerized-blue?logo=docker)
+![OCR](https://img.shields.io/badge/OCR-Tesseract-lightgrey)
+
+</div>
+
+---
+
+## 📌 Overview
+
+**LexiScan Auto** is a production-ready Intelligent Document Processing (IDP) system designed to extract structured entities from legal contracts.
+
+It supports:
+
+- 📄 Native digital PDFs  
+- 🖨 Scanned image-based PDFs (via OCR)
+
+The system automatically extracts:
+
+- Contract Dates  
+- Party Names  
+- Payment / Liability Terms  
+- Termination Clauses  
+- Legal & Restriction Clauses  
+
+---
+
+## 🏗 System Architecture
+
 PDF Upload
-   ↓
+↓
 OCR (Tesseract)
-   ↓
+↓
 Text Cleaning & Normalization
-   ↓
+↓
 spaCy Named Entity Recognition Model
-   ↓
-Rule-Based Postprocessing
-   ↓
-Structured JSON Response
+↓
+Rule-Based Validation
+↓
+Structured JSON Output
 
-📂 Project Structure
-.
+---
+
+## 📂 Project Structure
+
 ├── src/
-│   ├── api/              # FastAPI application (REST endpoint)
-│   ├── ocr/              # OCR pipeline and text preprocessing
-│   └── ner/              # Entity validation logic
+│ ├── api/ # FastAPI REST API
+│ ├── ocr/ # OCR + preprocessing pipeline
+│ └── ner/ # Rule-based validation
 │
-├── artifacts/            # Trained spaCy NER model
-├── data/                 # Training / evaluation data (if included)
-├── Dockerfile            # Containerized deployment
+├── artifacts/ # Trained spaCy NER model
+├── Dockerfile # Containerized deployment
 └── README.md
 
-⚙️ Technologies Used
+---
 
-Python 3.10
+## ⚙️ Tech Stack
 
-spaCy (Custom NER)
+- Python 3.10  
+- spaCy (Custom NER Model)  
+- Tesseract OCR  
+- pdfplumber  
+- FastAPI  
+- Uvicorn  
+- Docker  
 
-Tesseract OCR
+---
 
-pdfplumber
+## 🚀 Run Locally
 
-FastAPI
+Start API server:
 
-Docker
-
-Uvicorn
-
-🚀 Running Locally
-
-Start the API server:
-
+```bash
 uvicorn src.api.app:app --reload
-
-
-Open Swagger UI:
 
 http://127.0.0.1:8000/docs
 
+🐳 Run With Docker
 
-Upload a PDF via the /extract endpoint.
-
-🐳 Running with Docker
-
-Build the container:
+Build image:
 
 docker build -t lexiscan-auto .
 
 
-Run the container:
+Run container:
 
 docker run -p 8000:8000 lexiscan-auto
 
 
-Access the API:
+Access:
 
 http://localhost:8000/docs
 
-🔌 API Endpoint
+API Endpoint
 POST /extract
 
 Accepts:
@@ -114,12 +162,12 @@ Returns:
 
 🎯 Key Highlights
 
-Handles scanned contracts using OCR
+OCR support for scanned contracts
 
 Custom-trained Named Entity Recognition model
 
-Rule-based entity validation for higher reliability
+Rule-based validation for improved reliability
 
-Fully Dockerized for deployment consistency
+Fully Dockerized for production deployment
 
-Designed with production-level structure and modularity
+Modular, clean architecture
