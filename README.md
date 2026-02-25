@@ -237,7 +237,7 @@ Evaluate model: `python evaluate.py`
 Dockerized the pipeline to integrate both text based and pdf based inputs for entity recognition
 Image: [fintech-doc on Docker Hub](https://hub.docker.com/repository/docker/abhinay1289/fintech-doc/general)
 
-`docker pull abhinay1289/fintech-doc:latest`
+`docker pull abhinay1289/fintech-doc:latest`\
 `docker run -p 8000:8000 fintech-doc:latest`
 
 ---
