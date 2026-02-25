@@ -265,15 +265,6 @@ Image: [fintech-doc on Docker Hub](https://hub.docker.com/repository/docker/abhi
 
 ---
 
-## Contributor
-
-**Kalavakuri Abhinay**  
-label engineering, NER training and documentation.
-**Prathmesh Yadav**
-OCR pipeline, evaluation framework, deployment and dockerization
-
----
-
 ## License
 
 This project uses the CUAD dataset for research and educational purposes.
