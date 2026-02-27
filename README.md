@@ -168,11 +168,11 @@ Evaluation logic:
 - Exact span matching
 - Binary precision / recall / F1 computation
 
-Metrics printed:
-
-- Precision  
-- Recall  
-- F1-score  
+NER Evaluation Results
+----------------------
+Precision: 0.468
+Recall:    0.465
+F1-score:  0.467
 
 ---
 
