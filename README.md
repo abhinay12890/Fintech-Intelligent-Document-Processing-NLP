@@ -254,17 +254,6 @@ Image: [fintech-doc on Docker Hub](https://hub.docker.com/repository/docker/abhi
 
 ---
 
-## Future Enhancements
-
-- Transformer-based model (`en_core_web_trf`)  
-- Per-label performance reporting  
-- Confidence thresholding  
-- Structured JSON export  
-- RAG-based clause retrieval  
-- Layout-aware OCR integration  
-
----
-
 ## License
 
 This project uses the CUAD dataset for research and educational purposes.
